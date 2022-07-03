@@ -1,4 +1,5 @@
-# JQ
+# JQ ![GitHub Actions Status](https://github.com/1000ch/jq/workflows/test/badge.svg?branch=main)
+
 
 Extremely small DOM manipulation jQuert-like library.
 

@@ -8,6 +8,10 @@ export class JQ {
     });
   }
 
+  get length(): number {
+    return this.elements.length;
+  }
+
   forEach(fn: (element: HTMLElement) => void): this {
     for (const element of this.elements) {
       fn(element)
@@ -58,25 +62,25 @@ export class JQ {
     return this.forEach(el => el.classList.toggle(className));
   }
 
-  append(nodes: (string | Node)[]) {
+  append(...nodes: (string | Node)[]) {
     return this.forEach(el => {
       el.append(...nodes);
     });
   }
 
-  prepend(nodes: (string | Node)[]) {
+  prepend(...nodes: (string | Node)[]) {
     return this.forEach(el => {
       el.prepend(...nodes);
     });
   }
 
-  before(nodes: (string | Node)[]) {
+  before(...nodes: (string | Node)[]) {
     return this.forEach(el => {
       el.before(...nodes);
     });
   }
 
-  after(nodes: (string | Node)[]) {
+  after(...nodes: (string | Node)[]) {
     return this.forEach(el => {
       el.after(...nodes);
     });

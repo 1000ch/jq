@@ -10,7 +10,9 @@
     "url": "https://github.com/1000ch"
   },
   "scripts": {
-    "build": "tsc && terser jq.js --output jq.js"
+    "build": "tsc && terser jq.js --output jq.js",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "files": [
     "jq.d.ts",
@@ -26,7 +28,9 @@
     "stylesheet"
   ],
   "devDependencies": {
+    "jsdom": "^20.0.0",
     "terser": "^5.14.1",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "vitest": "^0.16.0"
   }
 }
