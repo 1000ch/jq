@@ -1,7 +1,7 @@
 {
   "name": "smallq",
   "version": "0.0.0",
-  "description": "",
+  "description": "Extremely small jQuert-like library",
   "license": "MIT",
   "repository": "1000ch/smallq",
   "author": {
@@ -12,7 +12,8 @@
   "scripts": {
     "build": "tsc && terser smallq.js --output smallq.js",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "prepublishOnly": "npm run build"
   },
   "files": [
     "smallq.d.ts",
