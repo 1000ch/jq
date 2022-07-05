@@ -1,8 +1,8 @@
 import {expect, test} from 'vitest';
-import {JQ, $} from './jq.js';
+import {SmallQ, $} from './smallq.js';
 
-test('JQ', () => {
-  expect($('div')).toBeInstanceOf(JQ);
+test('SmallQ', () => {
+  expect($('div')).toBeInstanceOf(SmallQ);
   expect($('div').elements).toBeInstanceOf(Array);
   expect($('div').events).toBeInstanceOf(WeakMap);
 });

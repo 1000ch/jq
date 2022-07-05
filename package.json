@@ -1,22 +1,22 @@
 {
-  "name": "jq",
+  "name": "smallq",
   "version": "0.0.0",
   "description": "",
   "license": "MIT",
-  "repository": "1000ch/jq",
+  "repository": "1000ch/smallq",
   "author": {
     "name": "Shogo Sensui",
     "email": "shogosensui@gmail.com",
     "url": "https://github.com/1000ch"
   },
   "scripts": {
-    "build": "tsc && terser jq.js --output jq.js",
+    "build": "tsc && terser smallq.js --output smallq.js",
     "test": "vitest",
     "coverage": "vitest run --coverage"
   },
   "files": [
-    "jq.d.ts",
-    "jq.js"
+    "smallq.d.ts",
+    "smallq.js"
   ],
   "keywords": [
     "browser",

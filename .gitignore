@@ -1,3 +1,3 @@
 node_modules
-jq.d.ts
-jq.js*
+smallq.d.ts
+smallq.js*

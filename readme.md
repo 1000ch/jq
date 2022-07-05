@@ -1,21 +1,20 @@
-# JQ ![GitHub Actions Status](https://github.com/1000ch/jq/workflows/test/badge.svg?branch=main)
+# SmallQ ![GitHub Actions Status](https://github.com/1000ch/smallq/workflows/test/badge.svg?branch=main)
 
-
-Extremely small DOM manipulation jQuert-like library.
+Extremely small jQuert-like library.
 
 ## API
 
-### class `JQ(selector: string)`
+### class `SmallQ(selector: string)`
 
 ```javascript
-const jq1 = new ('#id');
-const jq2 = new ('.className');
-const jq3 = new ('tagName');
+const smq1 = new SmallQ('#id');
+const smq2 = new SmallQ('.className');
+const smq3 = new SmallQ('tagName');
 ```
 
-### `$(selector: string): JQ`
+### `$(selector: string): SmallQ`
 
-Shorthand to call `new JQ()`.
+Shorthand to call `new SmallQ()`.
 
 ### `forEach(fn: (element: HTMLElement) => void): this`
 

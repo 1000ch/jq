@@ -1,4 +1,4 @@
-export class JQ {
+export class SmallQ {
   elements: HTMLElement[] = [];
   events: WeakMap<HTMLElement, EventListenerOrEventListenerObject[]> = new WeakMap();
 
@@ -126,4 +126,4 @@ export class JQ {
   }
 }
 
-export const $ = (selector: string) => new JQ(selector);
+export const $ = (selector: string) => new SmallQ(selector);

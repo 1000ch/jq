@@ -11,7 +11,7 @@
     "esModuleInterop": true
   },
   "include": [
-    "jq.ts"
+    "smallq.ts"
   ],
   "exclude": []
 }
